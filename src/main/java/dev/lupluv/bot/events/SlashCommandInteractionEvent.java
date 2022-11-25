@@ -24,6 +24,9 @@ public class SlashCommandInteractionEvent extends ListenerAdapter {
             if(e.getOption("name").getAsString().equalsIgnoreCase("simplegamemode")){
                 UpdateMessage.sendUpdateMessage(Plugin.SIMPLE_GAMEMODE);
                 hook.setEphemeral(true).editOriginalFormat("Sent message :D").queue();
+            }else if(e.getOption("name").getAsString().equalsIgnoreCase("craftattack8")){
+                UpdateMessage.sendUpdateMessage(Plugin.CRAFTATTACK8);
+                hook.setEphemeral(true).editOriginalFormat("Sent message :D").queue();
             }
         }
     }

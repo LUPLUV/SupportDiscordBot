@@ -19,6 +19,7 @@ public class SpigotMcChecker {
         try {
             URL url = null;
             if(plugin == Plugin.SIMPLE_GAMEMODE) url = new URL("https://api.spiget.org/v2/resources/86743/versions/latest");
+            if(plugin == Plugin.CRAFTATTACK8) url = new URL("https://api.spiget.org/v2/resources/91769/versions/latest");
             assert url != null;
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.addRequestProperty("User-Agent", USER_AGENT);// Set User-Agent
@@ -50,6 +51,7 @@ public class SpigotMcChecker {
         try {
             URL url = null;
             if(plugin == Plugin.SIMPLE_GAMEMODE) url = new URL("https://api.spiget.org/v2/resources/86743/updates/latest");
+            if(plugin == Plugin.CRAFTATTACK8) url = new URL("https://api.spiget.org/v2/resources/91769/updates/latest");
             assert url != null;
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.addRequestProperty("User-Agent", USER_AGENT);// Set User-Agent
@@ -81,6 +83,7 @@ public class SpigotMcChecker {
         try {
             URL url = null;
             if(plugin == Plugin.SIMPLE_GAMEMODE) url = new URL("https://api.spiget.org/v2/resources/86743/updates/latest");
+            if(plugin == Plugin.CRAFTATTACK8) url = new URL("https://api.spiget.org/v2/resources/91769/updates/latest");
             assert url != null;
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.addRequestProperty("User-Agent", USER_AGENT);// Set User-Agent
